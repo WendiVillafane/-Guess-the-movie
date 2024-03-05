@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+}
+
+.App {
+  font-family: "Press Start 2P", system-ui;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 85px;
+}
+h1 {
+  color: #f90000;
+}
+
+.score,
+.lives {
+  margin-bottom: 10px;
+  color: #747171;
+
+}
+
+.movie-title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 3px solid #e10000;
+  border-radius: 40px;
+  margin-right: 15px;
+  width: 300px;
+}
+input[ placeholder="Escribe el nombre de la película"] {
+  color: #000000;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.game-over {
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+
+.game-over button {
+  margin-top: 20px;
+}
+
+h2{
+  color: #ff0101;
+}
+
+
