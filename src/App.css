@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-image: url('assets/onepiece.png');
 }
 
 .App {
@@ -7,15 +7,16 @@ body {
   text-align: center;
   margin-top: 50px;
   margin-left: 85px;
+  height: 500px;
 }
 h1 {
-  color: #f90000;
+  color: #ffffff;
 }
 
 .score,
 .lives {
   margin-bottom: 10px;
-  color: #747171;
+  color: #ffffff;
 
 }
 
