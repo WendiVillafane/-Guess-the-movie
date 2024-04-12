@@ -1,13 +1,13 @@
 body {
-  background-image: url('assets/onepiece.png');
+  background-color: #000000;
 }
 
 .App {
   font-family: "Press Start 2P", system-ui;
   text-align: center;
   margin-top: 50px;
-  margin-left: 85px;
-  height: 500px;
+  margin-left: 500px;
+  height: 300px;
 }
 h1 {
   color: #ffffff;

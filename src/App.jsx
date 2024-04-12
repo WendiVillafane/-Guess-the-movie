@@ -2,27 +2,30 @@ import React, { useState } from 'react';
 import './App.css';
 
 const movies = [
-  { name: "Luffy", emoji: "🍖🍗🍜" },
-  { name: "Zoro", emoji: "⚔️🍺🤺" },
-  { name: "Nami", emoji: "🌩️🗺️💰" },
-  { name: "Usopp", emoji: "🏹🔭🧢" },
-  { name: "Sanji", emoji: "🍛🔥🚬" },
-  { name: "Tony Tony Chopper", emoji: "🦌💊🍵" },
-  { name: "Nico Robin", emoji: "📚🌸🔒" },
-  { name: "Franky", emoji: "🔩🔥🚂" },
-  { name: "Brook", emoji: "💀🎻🎩" },
-  { name: "Jinbe", emoji: "🌊🦈🤝" },
-  { name: "Law", emoji: "💊⚖️💉" },
-  { name: "Portgas Ace", emoji: "🔥👒🚢" },
-  { name: "Boa Hancock", emoji: "💘🐍🏹" },
-  { name: "Shanks", emoji: "🍺🏴‍☠️🔴🗡️" },
-  { name: "Edward Newgate (Whitebeard)", emoji: "⚓🔱💪" }, 
-  { name: "Donquixote Doflamingo", emoji: "🎩💰🔫" },
-  { name: "Charlotte Katakuri", emoji: "🍩🥊🍘" }
+  { name: "Forrest Gump", emoji: "🏃🍫🍤" },
+  { name: "The Matrix", emoji: "🕶️💊👽" },
+  { name: "Titanic", emoji: "🚢❄️💔" },
+  { name: "Jurassic Park", emoji: "🦖🌴🚙" },
+  { name: "The Lion King", emoji: "🦁👑🌅" },
+  { name: "Star Wars", emoji: "⚔️🚀🌌" },
+  { name: "The Avengers", emoji: "🦸‍♂️🦸‍♀️💥" },
+  { name: "Harry Potter", emoji: "⚡🧙‍♂️🔮" },
+  { name: "The Terminator", emoji: "🤖🔫🕶️" },
+  { name: "Indiana Jones", emoji: "🤠🔍💎" },
+  { name: "Back to the Future", emoji: "⏰🚗💥" },
+  { name: "The Shawshank Redemption", emoji: "🔒🔑💰" },
+  { name: "The Godfather", emoji: "🍕🤵🔫" },
+  { name: "The Dark Knight", emoji: "🦇♞👨‍🦯" },
+  { name: "Pulp Fiction", emoji: "🍔🔫🕶️" },
+  { name: "Schindler's List", emoji: "📜🚂🔴" },
+  { name: "The Lord of the Rings: The Return of the King", emoji: "🧝‍♂️🧙‍♂️🗡️" },
+  { name: "The Silence of the Lambs", emoji: "🔇🐑🍖" },
+  { name: "Fight Club", emoji: "👊💼🚽" },
+  { name: "Inception", emoji: "🌀👩‍🚀🎩" }
   ];
 const App = () => {
   const [score, setScore] = useState(0);
-  const [lives, setLives] = useState(5);
+  const [lives, setLives] = useState(3);
   const [currentMovieIndex, setCurrentMovieIndex] = useState(0);
   const [userInput, setUserInput] = useState('');
   const [gameOver, setGameOver] = useState(false);
@@ -62,20 +65,20 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Adivina el personaje de One piece</h1>
+      <h1>¡GUESS THE MOVIE!</h1>
       <div className="score">Puntaje: {score}</div>
       <div className="lives">Vidas: {lives}</div>
       {gameOver ? (
         <div className="game-over">
           {score === movies.length ? (
             <div>
-              <h2>¡Felicidades mi amor, has ganado!</h2>
+              <h2>¡Felicidades, has ganado!</h2>
               <button onClick={restartGame}>Jugar de nuevo</button>
             </div>
           ) : (
             <div>
-              <h2>¡perdidiste todas las vidas bebe :c !</h2>
-              <button onClick={restartGame}>Intenta, tu puedes</button>
+              <h2>¡perdidiste todas las vidas!</h2>
+              <button onClick={restartGame}>Intentar otra vez</button>
             </div>
           )}
         </div>
